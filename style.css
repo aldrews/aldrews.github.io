@@ -33,6 +33,7 @@ h1{
     padding: 20px;
     display: block;
     text-align: center;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
 }
 .toc{
     margin-left: 20px;
@@ -40,6 +41,11 @@ h1{
 
 .navbar a:hover{
     background-color: hsl(244, 74%, 48%)
+}
+.navbar a.active{
+    background-color: hsl(244, 74%, 48%);
+    font-weight: bold;
+    border-bottom: 3px solid rgb(211, 1, 1);
 }
 
 .navbar li{
@@ -76,4 +82,66 @@ h1{
 
 #img1{
     float: right;
+}
+
+-----------------------------------------------
+.question{
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.question p{
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+/* Buttons */
+button{
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(52, 73, 94);
+    color: white;
+}
+
+button:hover{
+    background-color: hsl(244, 74%, 48%);
+}
+
+/* Results styling */
+#results{
+    margin-top: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.correct{
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect{
+    color: red;
+    font-weight: bold;
 }

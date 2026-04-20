@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Heading for each page-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Internet Browsing</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+    <div class="box" id="box2"><h1>Quiz</h1></div>
+
+    <nav class="navbar">
+        <ul><!--Navigation Bar-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="risks.html">Risks</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="keyconcepts.html">Key Concepts</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="quiz.html"class="active">Quiz</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Self-Assessment Quiz</h1>
+
+    <form id="quizForm">
+
+        <!-- QUESTION 1: FILL IN THE BLANK -->
+        <div class="question">
+            <p>1. The act of casually browsing, searching, or navigation through websites is called _______:</p>
+            <input type="text" id="q1" placeholder="Type your answer here">
+        </div>
+
+        <!-- QUESTION 2: MULTIPLE CHOICE -->
+        <div class="question">
+            <p>2. What is a browser?:</p>
+
+            <label>
+                <input type="radio" name="q2" value="a">
+                A hardware device for storing data
+            </label><br>
+
+            <label>
+                <input type="radio" name="q2" value="b">
+                A computer program used to display and navigate web pages
+            </label><br>
+
+            <label>
+                <input type="radio" name="q2" value="c">
+                A cybersecurity tool for blocking viruses
+            </label>
+        </div>
+
+        <!-- QUESTION 3: MULTIPLE CHOICE -->
+        <div class="question">
+            <p>3. What was one of the earliest conceptual ideas that influenced browsing?</p>
+
+            <label>
+                <input type="radio" name="q3" value="a">
+                Social media platforms
+            </label><br>
+
+            <label>
+                <input type="radio" name="q3" value="b">
+                The memex concept by Vannevar Bush
+            </label><br>
+
+            <label>
+                <input type="radio" name="q3" value="c">
+                Mobile applications
+            </label>
+        </div>
+
+        <!-- QUESTION 4: MULTIPLE CHOICE -->
+        <div class="question">
+            <p>4. What is one major modern use of web browsers?</p>
+
+            <label>
+                <input type="radio" name="q4" value="a">
+                Only reading text documents
+            </label><br>
+
+            <label>
+                <input type="radio" name="q4" value="b">
+                Accessing games, AI tools, and websites
+            </label><br>
+
+            <label>
+                <input type="radio" name="q4" value="c">
+                Running physical computer hardware
+            </label>
+        </div>
+
+        <!-- QUESTION 5: MULTI-SELECT -->
+        <div class="question">
+            <p>5. Select all that apply (placeholder):</p>
+
+            <label>
+                <input type="checkbox" name="q5" value="a">
+                Phishing
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="q5" value="b">
+                Malware
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="q5" value="c">
+                HTTP protocols
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="q5" value="d">
+                Malicious redirects
+            </label>
+        </div>
+
+        <!-- BUTTONS -->
+        <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+        <button type="button" onclick="resetQuiz()">Reset Quiz</button>
+
+    </form>
+
+    <!-- RESULTS AREA -->
+    <div id="results"></div>
+
+
+
+<!-- LINK TO JAVASCRIPT -->
+<script src="quiz.js"></script>
+<footer>By Drew Snyder <br>Class project for Intro to Web Development <br><a href="https://ksuweb.github.io/IT3203/">https://ksuweb.github.io/IT3203/</a></footer><!--Main footer-->
+</main>
+    </body>
+</html>
