@@ -55,7 +55,18 @@ main{
 #box1:hover{
     transform: translateY(-3px);
 }
+    
+#img1{
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+    
 footer{
     text-align: center;
     padding: 20px;
