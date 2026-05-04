@@ -1,4 +1,132 @@
+
 main{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+body{
+    background-color: rgb(236, 240, 241);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(52, 73, 94);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar li{
+    float: none;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.toc{
+    margin-left: 20px;
+}
+
+.navbar a:hover{
+    background-color: hsl(244, 74%, 48%)
+}
+
+.navbar a.active{
+    background-color: hsl(244, 74%, 48%);
+    font-weight: bold;
+    border-bottom: 3px solid rgb(211, 1, 1);
+}
+
+#box1{
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgb(138, 136, 143);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#box2{
+    font-size: 2em;
+    width: auto;
+    height: auto;
+    background-color: rgb(236, 240, 241);
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#img1{
+    float: right;
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Quiz Section */
+.question{
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.question p{
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-right: 8px;
+}
+
+/* Buttons */
+button{
+    padding: 10px 15px;
+    margin-top: 15px;
     margin-right: 10px;
     border: none;
     border-radius: 5px;
