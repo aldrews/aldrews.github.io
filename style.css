@@ -145,3 +145,32 @@ button:hover{
     color: red;
     font-weight: bold;
 }
+@media screen and (max-width: 768px){
+
+    main{
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    #box1{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    .navbar ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a{
+        border-top: 1px solid rgba(255,255,255,0.2);
+        padding: 15px;
+    }
+
+    button{
+        width: 100%;
+        margin-bottom: 10px;
+    }}
