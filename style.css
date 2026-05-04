@@ -96,6 +96,11 @@ footer{
     padding: 20px;
 }
 
+button{
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
 /* MOBILE RESPONSIVE DESIGN */
 @media (max-width: 768px){
 
